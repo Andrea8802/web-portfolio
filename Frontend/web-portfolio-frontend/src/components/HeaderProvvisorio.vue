@@ -27,14 +27,14 @@ export default {
 
 header {
     @include d-flex(space-between, center);
-    height: 110px;
+    height: 90px;
     background-color: $primary-color;
     padding: 0 80px;
 
     a {
         text-decoration: none;
         color: $secondary-color;
-        font-size: 50px;
+        font-size: 34px;
     }
 
     img {
@@ -43,7 +43,7 @@ header {
 
     ul {
         @include d-flex(space-evenly, center);
-        gap: 50px;
+        gap: 40px;
     }
 
     li {

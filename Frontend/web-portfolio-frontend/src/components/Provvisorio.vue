@@ -21,11 +21,12 @@ export default {
 .alert {
     background-color: #f2f1df;
     background-image: url('../assets/provvisorio.jpg');
+    background-size: contain;
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(80vh - 90px);
 
 }
 </style>
