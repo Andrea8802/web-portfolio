@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "Header"
+    name: "HeaderProvvisorio"
 
 }
 </script>
@@ -10,9 +10,12 @@ export default {
         <img src="../assets/logo.png" alt="">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+                <a href="https://github.com/Andrea8802" target="_blank">
+                    <fa icon="fa-brands fa-github" />
+                </a>
+                <a href="https://www.linkedin.com/in/andreabonaventuradev/" target="_blank">
+                    <fa icon="fa-brands fa-linkedin" />
+                </a>
             </ul>
         </nav>
     </header>
@@ -28,13 +31,19 @@ header {
     background-color: $primary-color;
     padding: 0 80px;
 
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 50px;
+    }
+
     img {
         height: 60%
     }
 
     ul {
         @include d-flex(space-evenly, center);
-        gap: 20px;
+        gap: 50px;
     }
 
     li {
