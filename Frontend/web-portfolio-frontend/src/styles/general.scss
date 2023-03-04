@@ -8,3 +8,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f2f1df;
 }
+
+@media screen and (max-width: 500) {
+
+    header {
+        padding: 1000px;
+    }
+}

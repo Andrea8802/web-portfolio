@@ -38,7 +38,7 @@ header {
     }
 
     img {
-        height: 60%
+        height: 70%
     }
 
     ul {
@@ -52,6 +52,12 @@ header {
         font-size: 24px;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+        header {
+            background-color: red;
+        }
     }
 
 }

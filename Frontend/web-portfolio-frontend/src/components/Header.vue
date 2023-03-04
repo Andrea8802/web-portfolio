@@ -29,7 +29,7 @@ header {
     padding: 0 80px;
 
     img {
-        height: 60%
+        height: 70%
     }
 
     ul {
