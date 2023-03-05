@@ -1,6 +1,6 @@
 <script>
-import Header from './components/Header.vue';
-import Home from './components/Home.vue';
+import Header from '/src/components/Header.vue';
+import Home from '/src/components/Home.vue';
 
 export default {
   name: "App",

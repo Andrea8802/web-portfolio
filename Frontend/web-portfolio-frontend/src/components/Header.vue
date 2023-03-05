@@ -23,7 +23,7 @@ export default {
 
 <template>
     <header>
-        <img src="../assets/logo.png" alt="">
+        <img src="/src/assets/logo.png" alt="">
         <nav>
             <ul>
                 <li>
@@ -54,8 +54,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/_variables' as *;
-@use '../styles/partials/_mixins' as *;
+@use '/src/styles/partials/_variables' as *;
+@use '/src/styles/partials/_mixins' as *;
 
 header {
     @include d-flex(space-between, center);
