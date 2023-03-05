@@ -59,32 +59,43 @@ export default {
 
 header {
     @include d-flex(space-between, center);
-    height: 90px;
+    height: 110px;
     background-color: $primary-color;
     padding: 0 80px;
 
 
-
     img {
-        height: 70%
+        height: 70%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     ul {
         @include d-flex(space-evenly, center);
-        gap: 40px;
+        gap: 60px;
 
         li {
             color: $secondary-color;
             list-style: none;
-            font-size: 34px;
+            font-size: 44px;
             width: 30px;
             font-weight: bold;
             cursor: pointer;
 
+            &:hover {
+                color: $secondary-dark-color;
+            }
+
             a {
                 text-decoration: none;
                 color: $secondary-color;
-                font-size: 34px;
+                font-size: 44px;
+
+                &:hover {
+                    color: $secondary-dark-color;
+                }
             }
         }
 
@@ -93,9 +104,9 @@ header {
 
             .text {
                 position: absolute;
-                top: 70px;
-                left: -55px;
-                font-size: 20px;
+                top: 80px;
+                left: -60px;
+                font-size: 26px;
                 width: 400px;
             }
         }
