@@ -63,6 +63,8 @@ header {
     background-color: $primary-color;
     padding: 0 80px;
 
+
+
     img {
         height: 70%
     }
