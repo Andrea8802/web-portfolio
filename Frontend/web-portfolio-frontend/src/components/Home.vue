@@ -1,14 +1,24 @@
 <script>
+import Jumbotron from './Jumbotron.vue';
+
 export default {
     name: "Home",
+    components: {
+        Jumbotron
+    }
 
 }
 </script>
 
-<template></template>
+<template>
+    <div class="container">
+        <Jumbotron />
+    </div>
+</template>
 
 <style lang="scss" scoped>
-h1 {
-    color: red;
+.container {
+    height: calc(100vh - 90px);
+    width: 100%;
 }
 </style>
