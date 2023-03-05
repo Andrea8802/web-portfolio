@@ -17,13 +17,13 @@ export default {
         </div>
 
         <div class="right">
-            <img src="../assets/me.png" alt="">
+            <img src="/src/assets/me.png" alt="">
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/mixins' as *;
+@use '/src/styles/partials/mixins' as *;
 
 .container {
     @include d-flex(center, center);

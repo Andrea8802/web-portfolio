@@ -1,5 +1,5 @@
 <script>
-import Jumbotron from './Jumbotron.vue';
+import Jumbotron from './Home/Jumbotron.vue';
 
 export default {
     name: "Home",
@@ -12,6 +12,7 @@ export default {
 
 <template>
     <div class="container">
+        <Jumbotron />
         <Jumbotron />
     </div>
 </template>
