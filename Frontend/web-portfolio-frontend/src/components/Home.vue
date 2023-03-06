@@ -15,12 +15,13 @@ export default {
 <template>
     <div class="container">
         <Jumbotron />
+        <Bio />
     </div>
 </template>
 
 <style lang="scss" scoped>
 .container {
-    height: calc(100vh - 110px);
+    height: calc(100vh + 110px);
     width: 100%;
 }
 </style>

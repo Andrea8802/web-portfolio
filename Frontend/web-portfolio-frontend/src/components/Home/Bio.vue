@@ -6,6 +6,9 @@ export default {
 
 <template>
     <div class="container">
+        <p>
+            Mi chiamo
+        </p>
     </div>
 </template>
 

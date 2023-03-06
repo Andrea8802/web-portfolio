@@ -62,6 +62,10 @@ header {
     height: 110px;
     background-color: $primary-color;
     padding: 0 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 
 
     img {
