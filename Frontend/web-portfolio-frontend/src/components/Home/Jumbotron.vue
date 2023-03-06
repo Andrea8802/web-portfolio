@@ -1,11 +1,23 @@
 <script>
+import { store } from '/src/store.js';
+
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    data() {
+        return {
+            store
+        }
+    },
+    methods: {
+        onClick() {
+            store.contactOpen = true;
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="container">
+    <section class="container">
 
         <div class="left">
             <h2>
@@ -17,7 +29,7 @@ export default {
                 Jr. Full Stack Web Developer
             </div>
 
-            <button>
+            <button class="primary-button" @click="onClick">
                 Contact me
                 <fa icon="fa-solid fa-paper-plane" />
             </button>
@@ -26,7 +38,7 @@ export default {
         <div class="right">
             <img src="/src/assets/me.png" alt="">
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -54,20 +66,6 @@ export default {
 
     img {
         width: 400px;
-    }
-
-    button {
-        background-color: $secondary-color;
-        color: $text-color;
-        border-radius: 25px;
-        border: 2px solid $secondary-dark-color;
-        padding: 10px 18px;
-        font-size: 26px;
-        cursor: pointer;
-
-        &:hover {
-            box-shadow: 0px 10px 15px rgba($color: #000000, $alpha: 0.5);
-        }
     }
 
 }

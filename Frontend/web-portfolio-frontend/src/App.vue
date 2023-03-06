@@ -1,12 +1,20 @@
 <script>
 import Header from './components/Header.vue';
 import Home from './components/Home.vue';
+import Contacts from './components/Contacts.vue';
+import { store } from '/src/store.js';
 
 export default {
   name: "App",
   components: {
     Header,
-    Home
+    Home,
+    Contacts
+  },
+  data() {
+    return {
+      store
+    }
   }
 
 }
@@ -14,7 +22,8 @@ export default {
 
 <template>
   <Header />
-  <Home />
+  <Home v-if="!store.contactOpen" />
+  <Contacts v-else />
 </template>
 
 <style lang="scss">

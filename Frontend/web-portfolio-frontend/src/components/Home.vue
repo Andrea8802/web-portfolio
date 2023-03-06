@@ -15,7 +15,6 @@ export default {
 <template>
     <div class="container">
         <Jumbotron />
-        <Bio />
     </div>
 </template>
 
