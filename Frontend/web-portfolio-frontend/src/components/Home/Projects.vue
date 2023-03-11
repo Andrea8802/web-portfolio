@@ -1,15 +1,12 @@
 <script>
 export default {
-    name: 'Bio'
+    name: 'Projects'
 }
 </script>
 
 <template>
     <div class="container">
-        <h1>
-            My Skills!
-        </h1>
-        <img src="/src/assets/skills.png" alt="">
+
     </div>
 </template>
 
@@ -19,7 +16,6 @@ export default {
 
 .container {
     @include d-flex(flex-start, center);
-    flex-direction: column;
     gap: 60px;
     color: $text-color;
 
