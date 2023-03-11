@@ -22,17 +22,16 @@ export default {
         <div class="left">
             <h2>
                 Hi, I'm Andrea
-
             </h2>
             <hr>
             <div class="text">
                 Jr. Full Stack Web Developer
             </div>
 
-            <button class="primary-button" @click="onClick">
-                Contact me
-                <fa icon="fa-solid fa-paper-plane" />
-            </button>
+            <a href="/src/assets/curriculum.pdf" class="primary-button" download="Andrea-Bonaventura-CV">
+                Download CV
+                <fa icon="fa-solid fa-download" />
+            </a>
         </div>
 
         <div class="right">
@@ -60,7 +59,7 @@ export default {
     }
 
     .text {
-        margin: 25px 0;
+        margin: 25px 0 40px;
         font-size: 38px;
     }
 

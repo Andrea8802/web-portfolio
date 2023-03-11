@@ -7,7 +7,7 @@ export default {
 <template>
     <div class="container">
         <p>
-            Mi chiamo
+            <img src="/src/assets/skills.png" alt="">
         </p>
     </div>
 </template>
@@ -19,6 +19,7 @@ export default {
     @include d-flex(center, center);
     gap: 50px;
     color: #222220;
+    background-color: #d7d6c5;
 
 }
 </style>

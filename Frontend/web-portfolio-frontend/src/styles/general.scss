@@ -9,7 +9,11 @@
 
 body {
     font-family: 'Golos Text', sans-serif;
-    background-color: #f2f1df;
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
 }
 
 .primary-button {
