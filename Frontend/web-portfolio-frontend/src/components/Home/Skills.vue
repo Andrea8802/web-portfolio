@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="ms_container">
         <h1>
             My Skills!
         </h1>
@@ -17,7 +17,7 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.container {
+.ms_container {
     @include d-flex(flex-start, center);
     flex-direction: column;
     gap: 60px;

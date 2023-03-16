@@ -9,14 +9,22 @@
 
 body {
     font-family: 'Golos Text', sans-serif;
-    background-color: $background-color;
+    overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+
+    &:hover {
+        color: $text-color !important;
+    }
 }
 
-.primary-button {
+.ms_container {
+    background-color: $background-color;
+}
+
+.ms_primary-button {
     background-color: $secondary-color;
     color: $text-color;
     border-radius: 20px;

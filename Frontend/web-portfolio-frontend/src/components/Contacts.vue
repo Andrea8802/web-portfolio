@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="ms_container">
         <div>
             <a href="https://github.com/Andrea8802" target="_blank">
                 Github
@@ -57,7 +57,7 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.container {
+.ms_container {
     @include d-flex(center, center);
     height: calc(100vh - 110px);
     width: 100%;

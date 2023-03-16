@@ -43,7 +43,7 @@ export default {
                 </li>
 
                 <li v-else class="copied">
-                    <fa icon="fa-solid fa-clipboard-check" />
+                    <fa icon="fa-solid fa-check" />
                     <div class="text">
                         Email Copied!
                     </div>
@@ -59,13 +59,14 @@ export default {
 
 header {
     @include d-flex(space-between, center);
-    height: 110px;
+    height: 90px;
     background-color: $primary-color;
     padding: 0 80px;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 900;
 
 
     img {
@@ -76,45 +77,55 @@ header {
         }
     }
 
-    ul {
-        @include d-flex(space-evenly, center);
-        gap: 60px;
+    nav {
+        height: 100%;
 
-        li {
-            color: $secondary-color;
-            list-style: none;
-            font-size: 44px;
-            width: 30px;
-            font-weight: bold;
-            cursor: pointer;
+        ul {
+            @include d-flex(space-evenly, center);
+            gap: 60px;
+            height: 100%;
 
-            &:hover {
-                color: $secondary-dark-color;
-            }
-
-            a {
-                text-decoration: none;
+            li {
                 color: $secondary-color;
-                font-size: 44px;
+                list-style: none;
+                font-size: 36px;
+                width: 30px;
+                font-weight: bold;
+                cursor: pointer;
 
                 &:hover {
                     color: $secondary-dark-color;
                 }
+
+                a {
+                    text-decoration: none;
+                    color: $secondary-color;
+                    font-size: 36px;
+
+
+                    &:hover {
+                        color: $secondary-dark-color;
+                    }
+                }
             }
-        }
 
-        .copied {
-            position: relative;
+            .copied {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 32px;
 
-            .text {
-                position: absolute;
-                top: 80px;
-                left: -60px;
-                font-size: 26px;
-                width: 400px;
+                .text {
+                    font-size: 16px;
+                    width: 200px;
+                    text-align: center;
+                }
             }
         }
     }
+
+
 
 }
 </style>

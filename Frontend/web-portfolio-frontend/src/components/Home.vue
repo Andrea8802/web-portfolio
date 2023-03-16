@@ -1,27 +1,31 @@
 <script>
 import Jumbotron from './Home/Jumbotron.vue';
 import Skills from './Home/Skills.vue';
+import Projects from './Home/Projects.vue';
 
 export default {
     name: "Home",
     components: {
         Jumbotron,
-        Skills
+        Skills,
+        Projects
     }
 
 }
 </script>
 
 <template>
-    <div class="container">
+    <div class="ms_container">
         <Jumbotron />
         <Skills />
+        <Projects />
+
     </div>
 </template>
 
 <style lang="scss" scoped>
-.container {
-    min-height: calc(100vh + 110px);
+.ms_container {
+    min-height: calc(100vh + 90px);
     width: 100%;
 }
 </style>

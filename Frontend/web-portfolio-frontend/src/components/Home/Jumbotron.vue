@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <section class="container">
+    <section class="ms_container">
 
         <div class="left">
             <h2>
@@ -28,7 +28,7 @@ export default {
                 Jr. Full Stack Web Developer
             </div>
 
-            <a href="/src/assets/curriculum.pdf" class="primary-button" download="Andrea-Bonaventura-CV">
+            <a href="/src/assets/curriculum.pdf" class="ms_primary-button" download="Andrea-Bonaventura-CV">
                 Download CV
                 <fa icon="fa-solid fa-download" />
             </a>
@@ -44,7 +44,7 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.container {
+.ms_container {
     @include d-flex(center, center);
     gap: 50px;
     color: $text-color;
