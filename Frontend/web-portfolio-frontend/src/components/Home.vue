@@ -15,16 +15,17 @@ export default {
 </script>
 
 <template>
-    <div class="ms_container">
+    <div class="ms_home_container">
         <Jumbotron />
         <Skills />
         <Projects />
+
 
     </div>
 </template>
 
 <style lang="scss" scoped>
-.ms_container {
+.ms_home_container {
     min-height: calc(100vh + 90px);
     width: 100%;
 }

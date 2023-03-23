@@ -29,18 +29,20 @@ export default {
 </script>
 
 <template>
-    <div class="ms_container">
+    <div class="ms_project_container">
         <div id="slider">
             <transition-group tag="div" :name="transitionName" class="slides-group">
                 <div v-if="show" :key="current" class="slide" :class="direction == 1 ? 'next-anim' : 'prev-anim'">
                     <img :src="images[current].src">
                 </div>
             </transition-group>
+
             <div class="btn btn-prev" aria-label="Previous slide" @click="slide(-1)">
-                &#10094;
+                <fa icon="fa-solid fa-angle-left" />
             </div>
+
             <div class="btn btn-next" aria-label="Next slide" @click="slide(1)">
-                &#10095
+                <fa icon="fa-solid fa-angle-right" />
             </div>
         </div>
     </div>
@@ -50,10 +52,10 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.ms_container {
-    @include d-flex(center, center);
-    height: 100vh;
+.ms_project_container {
+    @include d-flex(center, flex-start);
     width: 100%;
+    height: 100vh;
 
     .next-anim {
         animation: nextAnim 0.5s ease;
@@ -129,33 +131,41 @@ export default {
 
         img {
             width: 100%;
+            border: 2px solid $secondary-color;
+            border-radius: 20px;
         }
+    }
+
+    .slide-group {
+        position: relative;
     }
 
     .slide {
         width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .btn {
-        z-index: 10;
+        z-index: 5;
         cursor: pointer;
-        border: 3px solid #fff;
+        border: 3px solid $secondary-color;
+        border-radius: 50%;
+        color: $secondary-color;
+        background-color: $primary-color;
+        font-size: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70px;
-        height: 70px;
         position: absolute;
-        top: calc(50% - 35px);
+        width: 40px;
+        height: 40px;
+        top: 50%;
         left: 1%;
-        transition: transform 0.3s ease-in-out;
+        transform: translate(0%, -50%);
+        transition: all 0.2s ease;
         user-select: none;
     }
 
@@ -165,9 +175,10 @@ export default {
     }
 
     .btn:hover {
-        transform: scale(1.1);
+        border: 3px solid $secondary-dark-color;
+        color: $primary-color;
+        background-color: $secondary-color;
     }
-
 
 
 }

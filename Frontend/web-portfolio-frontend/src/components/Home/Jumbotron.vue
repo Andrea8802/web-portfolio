@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <section class="ms_container">
+    <section class="ms_jumbotron_container">
 
         <div class="left">
             <h2>
@@ -44,8 +44,9 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.ms_container {
+.ms_jumbotron_container {
     @include d-flex(center, center);
+    height: 100vh;
     gap: 50px;
     color: $text-color;
 

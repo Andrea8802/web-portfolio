@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="ms_container">
+    <div class="ms_skills_container">
         <h1>
             My Skills!
         </h1>
@@ -17,11 +17,12 @@ export default {
 @use '/src/styles/partials/mixins' as *;
 @use '/src/styles/partials/variables' as *;
 
-.ms_container {
-    @include d-flex(flex-start, center);
+.ms_skills_container {
+    @include d-flex(center, center);
     flex-direction: column;
     gap: 60px;
     color: $text-color;
+    height: 80vh;
 
     h1 {
         font-size: 60px;

@@ -2,6 +2,7 @@
 import Header from './components/Header.vue';
 import Home from './components/Home.vue';
 import Contacts from './components/Contacts.vue';
+import Footer from './components/Footer.vue';
 import { store } from '/src/store.js';
 
 export default {
@@ -9,6 +10,7 @@ export default {
   components: {
     Header,
     Home,
+    Footer,
     Contacts
   },
   data() {
@@ -24,6 +26,7 @@ export default {
   <Header />
   <Home v-if="!store.contactOpen" />
   <Contacts v-else />
+  <Footer />
 </template>
 
 <style lang="scss">
